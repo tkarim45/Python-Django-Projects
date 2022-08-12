@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {%block title %} Delete Content {% endblock%} {% load
+static %} {% block content %} {% if request.user.is_authenticated %}
+<div class="container my-5">
+  <h2 class="">Delete {{hotel.hotel_name}}</h2>
+  <br />
+  <div class="form-group">
+    <form action="" method="post">
+      {% csrf_token %}
+      <strong>Are You Sure You Want To?</strong>
+      <br /><br />
+      <button class="btn btn-dark">Delete</button>
+      <a href="{% url 'index' %}" class="btn btn-dark back">Back</a>
+    </form>
+  </div>
+</div>
+
+{% else %}
+<div class="container py-5 mr-5">
+  <h2>Login First</h2>
+</div>
+
+{% endif %} {% endblock %}

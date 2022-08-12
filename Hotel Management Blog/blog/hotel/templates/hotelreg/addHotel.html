@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block content %}
+
+{% if request.user.is_authenticated %}
+<div class="container my-5">
+  <h2 class="">Add Content</h2>
+
+  <div class="form-group">
+    <form action="" method="post" enctype="multipart/form-data">
+      {% csrf_token %} {{form.media}} {{form.as_p}}
+      post id {{user}}
+      <button class="btn btn-dark">Post</button>
+      <a href="{% url 'index' %}" class="btn btn-dark back">Back</a>
+    </form>
+  </div>
+</div>
+
+<script>
+  var name = "{{ user.id }}";
+  document.getElementById("hotelManager").value = name;
+</script>
+
+{% else %}
+<div class="container py-5 mr-5">
+  <h2>Login First</h2>
+</div>
+{% endif %} {% endblock %}
