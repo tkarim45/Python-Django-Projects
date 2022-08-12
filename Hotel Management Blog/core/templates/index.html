@@ -1,0 +1,68 @@
+{% extends 'base.html' %} {% load static %}
+
+<link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+
+{% block content %}
+
+<section class="container-fluid px-0 mb-5">
+  <div class="row align-items-center">
+    <div class="col-lg-12">
+      <img class="img-fluid" src="{% static 'images/pic1.jpg' %}" alt="" />
+    </div>
+  </div>
+</section>
+
+{% for i in object_list %}
+
+<div class="container">
+  <br />
+
+  <h2><a href="{% url 'index-detailed' i.pk %}">{{i.title}}</a></h2>
+  <br />
+  {% if i.Image %}
+  <img src="{{ i.Image.url }}" alt="" class="img-fluid mb-5" />
+  {% endif %}
+
+  <div class="content">
+    <p>{{i.content | safe}}</p>
+  </div>
+
+
+
+  {% if request.user.is_authenticated%}
+
+
+  {%if request.user.user_type == "HotelManager" and user.id == i.author.id%}
+  <a href=" {% url 'update-content' i.pk %}">EDIT</a>
+  <a href="{% url 'delete-content' i.pk %}">DELETE</a>
+  <br /><br />
+
+  <a href="{% url 'addHotel' i.pk %}">ADD HOTEL</a>
+  <a href="{% url 'booking' i.pk %}">BOOKINGS</a>
+  <br /><br />
+  {% endif %}
+
+  {%if request.user.user_type == "Admin"%}
+  <a href=" {% url 'update-content' i.pk %}">EDIT</a>
+  <a href="{% url 'delete-content' i.pk %}">DELETE</a>
+  <br /><br />
+
+  <a href="{% url 'addHotel' i.pk %}">ADD HOTEL</a>
+  <a href="{% url 'booking' i.pk %}">BOOKINGS</a>
+  <br /><br />
+  {% endif %}
+
+
+  {%if request.user.user_type == "Tourist"%}
+  <a href="{% url 'booking' i.pk %}">BOOKINGS</a>
+  <br /><br />
+  {% endif %}
+
+
+
+
+  <br /><br />
+  {% endif%}
+</div>
+
+{% endfor %} {% endblock %}

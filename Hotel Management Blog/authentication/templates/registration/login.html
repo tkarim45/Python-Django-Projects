@@ -1,0 +1,63 @@
+{% block content %}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<style>
+  body {
+    background-image: url(https://images.unsplash.com/photo-1612278675615-7b093b07772d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80);
+    background-size: cover;
+  }
+
+  .container.my-5 {
+    margin: 138px;
+    background-color: #0e1a266e;
+    padding: 56px;
+    border-radius: 5px;
+
+  }
+
+
+  form {
+    display: block;
+    margin-top: 0em;
+    margin-block-end: 1em;
+  }
+
+  form .flag {
+    display: grid;
+    margin-top: 0em;
+    margin-block-end: 1em;
+  }
+
+  form .flag input {
+    border-radius: 2px;
+    border-color: transparent;
+  }
+</style>
+
+<div class="container my-5">
+  <br /><br />
+  <h2 class="">Login</h2>
+  <br />
+
+  <div class="form-group">
+    <form action="" method="post">
+      {% csrf_token %} {%include "hotelreg/messages.html"%}
+      <div class="flag">
+        <label for="username">Enter Username</label>
+        <input type="text" placeholder="Username" id="username" name="username" />
+        <br />
+        <label for="pwd">Enter Password</label>
+        <input type="password" placeholder="Password" id="pwd" name="password" />
+        <br />
+
+      </div>
+
+
+      <input type="submit" value="Login" class="btn btn-dark" />
+      <a href="{% url 'index' %}" class="btn btn-dark ml-2 back">BACK</a>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
