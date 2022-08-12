@@ -21,7 +21,8 @@ Hotel Management blog in Python using Django Framework
 <img width="1440" alt="Screenshot 2022-08-11 at 4 11 43 PM" src="https://user-images.githubusercontent.com/86923612/184309274-86077815-a15f-4d8b-a65e-b0bf416978dd.png">
 
 
-![Uploading Screenshot 2022-08-11 at 4.12.13 PM.png…]
+<img width="1437" alt="Screenshot 2022-08-11 at 4 12 13 PM" src="https://user-images.githubusercontent.com/86923612/184309956-fe2ec833-2bbf-42fa-a8e7-a970221d3975.png">
+
 
 
 <img width="1436" alt="Screenshot 2022-08-11 at 4 12 36 PM" src="https://user-images.githubusercontent.com/86923612/184309290-3e6863aa-1c6d-4ec0-ac07-631c2e1743d8.png">
