@@ -1,0 +1,25 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'core/styles/style.css' %}" />
+
+<div class="browse-container">
+  <h3 class="browse">Recent Activities</h3>
+  <hr />
+
+  {% for i in room_messages%}
+
+  <div class="activity">
+    <a href="{% url 'user-profile' i.user.id%}" class="username">@{{i.user}}</a>
+    <small>{{i.created|timesince}} replied to <span>"{{i.room}}"</span></small
+    ><br /><br />
+    <p>{{i}}</p>
+    {% if request.user == i.user %}
+    <br />
+    <a href="{% url 'delete-message' i.id %}" class="delete">Delete</a>
+    {% endif %}
+
+    <hr />
+  </div>
+
+  {% endfor%}
+</div>

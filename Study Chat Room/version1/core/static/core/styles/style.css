@@ -1,0 +1,207 @@
+.room-container {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+}
+
+.profile h1{
+    color: white;
+    font-weight: 510;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-style: 'open sans', sans-serif;
+}
+
+.room-container h2{
+    color: white;
+    font-size: 800;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.room-container p{
+    color: white;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+
+.home-container {
+display: grid;
+grid-template-columns: 1fr 4fr 1.5fr;
+background-color: #00588b;
+}
+
+.browse-container{
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #e1e1e1;
+    text-decoration: none;
+    color: #666666;
+    padding: 10px;
+}
+
+.browse{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+
+.browse-container a{
+    color: #666666;
+    text-decoration: none;
+    border-radius: 5px; 
+
+}
+
+.browse-container a:hover {
+    color: #FF3B3F;
+}
+
+.browse-container a.uname {
+    color: #4ba3d6;
+}
+
+.browse-container a.uname:hover {
+    color: #FF3B3F;
+}
+
+.activity a.username{
+    color: #4ba3d6;
+}
+
+.activity a.username:hover {
+    color: #FF3B3F;
+}
+
+.activity small{
+    font-size: 10px;
+}
+
+.activity h6{
+    font-size: 15px;
+}
+
+.activity small span{
+    font-size: 14px;
+}
+
+.activity p{
+    font-size: 17px;
+}
+
+.browse-container a.delete{
+    color: #FF3B3F;
+}
+
+.browse-container a.delete:hover {
+    color: #666666;
+}
+
+.browse-container a.edit {
+    color: #FF3B3F;
+}
+
+.browse-container a.edit:hover {
+    color: #666666;
+}
+.browse-container h5{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.browse-container small.topic-text{
+    font-size: 12px;
+}
+
+.comment-form{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.Create-room a.cr{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 15px;
+    border: 2px solid rgb(101, 196, 255);
+    background-color: rgb(101, 196, 255);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.Create-room a.cr:hover {
+    color:#FF3B3F;
+}
+
+.Create-room h5.cr{
+    color: white;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.delete-form form p{
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.delete-form form a{
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 15px;
+    text-decoration: none;
+    border: 2px solid rgb(101, 196, 255);
+    background-color: rgb(101, 196, 255);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.delete-form form input {
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 15px;
+    text-decoration: none;
+    border: 2px solid rgb(101, 196, 255);
+    background-color: rgb(101, 196, 255);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.delete-form form a:hover {
+    color: #FF3B3F;
+}
+
+.delete-form form input:hover {
+    color: #FF3B3F;
+}
+
+.room-form form input{
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 15px;
+    text-decoration: none;
+    border: 2px solid rgb(101, 196, 255);
+    background-color: rgb(101, 196, 255);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+
+
+

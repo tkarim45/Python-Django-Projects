@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'styles/main.css' %}" />
+  <title>Django</title>
+</head>
+
+<body>
+  <!-- Navbar  -->
+  {% include 'navbar.html' %}
+
+  {% if messages %}
+
+  <div class="messages">
+    <ul>
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+
+  <!-- way to add pics -->
+  <!-- <img src="{% static 'images/hao-wang-pVq6YhmDPtk-unsplash.jpg' %}" alt="" /> -->
+
+  <!-- All Components Together -->
+  {% block content %}
+
+
+
+  {% endblock %}
+</body>
+
+</html>

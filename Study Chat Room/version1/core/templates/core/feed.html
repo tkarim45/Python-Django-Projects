@@ -1,0 +1,22 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'core/styles/style.css' %}" />
+
+<div>
+  {% for i in rooms%}
+  <div class="browse-container">
+    <a href="{% url 'user-profile' i.host.id%}" class="uname"
+      >@{{i.host.username}}</a
+    ><br /><br />
+    <h5>{{i.id}} -- <a href="{% url 'room' i.id %}">{{i.name}}</a></h5>
+    <br />
+    <br />
+    <small class="topic-text">{{i.topic.text}}</small><br />
+    {% if request.user == i.host %}
+    <br />
+    <a href="{% url 'update-room' i.id %}" class="edit">Edit</a>
+    <a href="{% url 'delete-room' i.id %}" class="delete">Delete</a>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>

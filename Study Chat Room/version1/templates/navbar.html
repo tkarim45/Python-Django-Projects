@@ -1,0 +1,27 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'styles/main.css' %}" />
+
+
+<div class="nav">
+  <nav class="navbar-container">
+    <div class="com">
+      <h1><a href="/"> Parhai<span>.com</span></a></h1>
+    </div>
+
+    <div class="search">
+      <form action="{% url 'index'%}" method="GET" class="Searchrooms">
+        <input type="text" name="q" placeholder=" &#128269  Search For Rooms" />
+      </form>
+    </div>
+
+    <div class="login-container">
+      {% if request.user.is_authenticated %}
+      <!-- <p>Hello {{request.user}}</p> -->
+      <a href="{% url 'logout' %}">Log out</a>
+      {% else %}
+      <a href="{% url 'login' %}">Login</a>
+      {% endif %}
+    </div>
+  </nav>
+</div>

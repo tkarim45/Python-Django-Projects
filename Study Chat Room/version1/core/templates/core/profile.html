@@ -1,0 +1,17 @@
+{% extends 'index.html'%} {% block content%} {% load static %}
+
+<link rel="stylesheet" href="{% static 'core/styles/style.css' %}" />
+
+<div class="profile">
+  <h1>{{user.username}}</h1>
+
+  <div class="profile-container">
+    <div>{% include 'core/topiccomponents.html' %}</div>
+
+    <div>{% include 'core/feed.html' %}</div>
+
+    <div>{% include 'core/activityfeed.html' %}</div>
+  </div>
+</div>
+
+{% endblock%}

@@ -1,0 +1,22 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'core/styles/style.css' %}" />
+
+<div class="browse-container">
+  <h3 class="browse">Browse Topics</h3>
+  <hr />
+
+  <div>
+    <a href="{% url 'index' %}">All</a>
+  </div>
+  <br />
+
+  {% for topic in topics%}
+
+  <div class="all-topics">
+    <a href="{% url 'index' %}?q={{topic.text}}">{{topic.text}}</a>
+  </div>
+  <br />
+
+  {% endfor%}
+</div>

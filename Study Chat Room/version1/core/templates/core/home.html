@@ -1,0 +1,21 @@
+{% extends 'index.html' %} {% block content %} {% load static %}
+
+<link rel="stylesheet" href="{% static 'core/styles/style.css' %}" />
+
+<div class="home-container">
+  <!-- topic Component -->
+  <div>{%include 'core/topiccomponents.html'%}</div>
+
+  <div class="Create-room">
+    <h5 class="cr">{{room_count}} Rooms available</h5>
+    <!-- Feed Component -->
+    {%include 'core/feed.html'%}
+    <br /><br />
+    <a href="{% url 'create-room' %}" class="cr">Create Room</a>
+  </div>
+
+  <!-- activity Feed Component -->
+  <div>{% include 'core/activityfeed.html'%}</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{%extends 'index.html'%}
+
+<div class="home-container">
+  {%block content%} 
+  {% if page == 'login'%}
+  <div class="lc">
+    <form action="" method="post">
+      {% csrf_token %}
+
+      <label for="username">Enter Username</label>
+      <input type="text" placeholder="Username" id="username" name="username" />
+      <label for="pwd">Enter Password</label>
+      <input type="password" placeholder="Password" id="pwd" name="password" />
+      <br />
+      <input type="submit" value="Login" />
+
+      <a href="{{request.META.HTTP_REFERER}}">Go Back</a>
+      
+    </form>
+    <br />
+  </div>
+
+  {% else %}
+  <div class="lc">
+    <form action="" method="post">
+      {% csrf_token %} {{form.as_p}}
+
+      <input type="submit" value="Register" />
+    </form>
+    <p>Already Signed Up? <a href="{%url 'login' %}">Login</a></p>
+  </div>
+
+  {% endif %} {%endblock content%}
+</div>

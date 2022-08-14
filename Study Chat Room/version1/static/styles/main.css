@@ -1,0 +1,312 @@
+/* body{
+    background-color: #2d2d39;
+} */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* Styling of Navbar */
+
+body{
+    background-color: #00588b;
+    
+}
+
+.navbar-container{
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    color: #666666;
+    
+}
+
+.navbar-container .com a{
+    text-decoration: none;
+    color: #666666
+}
+
+.navbar-container .com a:hover {
+    color: #FF3B3F;
+}
+
+
+.navbar-container .com span{
+    color: #FF3B3F;
+}
+
+.navbar-container h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'open sans', sans-serif;
+   
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+.login{
+    display: flex;
+    justify-content: right;
+}
+
+.Searchrooms input{
+    background-color: #2d2d39;
+    border: 1px solid #535370;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    transition: all 2s ease;
+    color: white;
+}
+
+
+/* .Searchrooms ::placeholder{
+    color: white;
+    
+} */
+/* .Searchrooms ::placeholder:hover {
+    color: white;
+
+} */
+
+.login-container a{
+    display: inline-block;
+    text-decoration: none;
+    color: #A9A9A9;
+    font-size: 20px;
+    padding-top: 5px;
+    transition: background-color 0.5s ease-in; 
+}
+
+.login-container a:hover{
+    color: #FF3B3F;
+}
+
+
+.search .Searchrooms input::placeholder{
+    color: #A9A9A9;
+}
+
+.search .Searchrooms input:hover::placeholder {
+    color: white;
+    
+}
+
+.search .Searchrooms input:focus:placeholder {
+    background-color: #0a0aca;
+    color: white;
+}
+
+.lc form input{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 2px solid rgb(252, 252, 252);
+    background-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.lc form input:hover {
+    color: #FF3B3F;
+}
+
+.lc form a{
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: 2px solid rgb(252, 252, 252);
+    background-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.lc form a:hover {
+    color: #FF3B3F;
+}
+
+.lc p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-left: 15px;
+    color: white;
+}
+
+.lc p a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: 2px solid rgb(252, 252, 252);
+    background-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.lc p a:hover{
+    color: #FF3B3F;
+}
+
+.lc form label{
+    margin-left: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.messages ul{
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+
+
